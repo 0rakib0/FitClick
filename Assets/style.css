@@ -1,3 +1,104 @@
-.navbar{
-    background-color: red;
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&display=swap');
+
+
+body {
+    width: 90%;
+    margin: 0 auto;
+    font-family: 'Oswald', sans-serif;
+}
+
+.customLogoDesign{
+    color: white;
+    font-size: 35px;
+}
+
+
+.CustomDesignNav {
+    background-color: #686A6F;
+    color: white;
+    
+}
+
+.textWhite {
+    color: white;
+}
+
+
+
+.nav-link {
+    color: white;
+    font-size: 22px;
+    text-transform: uppercase;
+}
+
+.nav-link:hover {
+    color: #FB5B20;
+}
+
+.SlideCustomDesign img{
+    height: 100px;
+}
+
+.SlideCustomDesign img{
+    height: 100%;
+    width: 100%;
+}
+
+.section-title{
+    text-align: center;
+    
+}
+
+.section-title p{
+    color: #FB5B20;
+}
+.section-title h4{
+    font-size: 2rem;
+}
+
+.aboutToggle{
+    background-color: #686A6F;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 14rem;
+}
+
+.aboutToggle button{
+    background: none;
+    border: none;
+    font-weight: 700;
+}
+
+.toggleButtonColor{
+    color: #FB5B20;
+    background-color: aqua;
+    border: 2px solid red;
+}
+
+.uploadImage{
+    height: 200px;
+    width: 40%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(206, 206, 206);
+    border: 2px dashed #FB5B20;
+    border-radius: 8px;
+}
+
+.uploadButton{
+    background-color: #FB5B20;
+    color: white;
+    border: none;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 3rem;
+    padding: 8px;
+    border-radius: 5px;
+}
+
+.uploadButton:hover{
+    border: 1px solid #FB5B20;
+    background-color: rgb(206, 206, 206);
+    color: #FB5B20;
+    animation-duration: 100;
 }

@@ -5,57 +5,192 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Bootstrap demo</title>
-    <link rel="stylesheet" href="Assets/style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="Assets/style.css">
 </head>
 
 <body>
-
     <!-- Navbar section start -->
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">Navbar</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Link</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                            aria-expanded="false">
-                            Dropdown
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Action</a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                            <li>
-                                <hr class="dropdown-divider">
-                            </li>
-                            <li><a class="dropdown-item" href="#">Something else here</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link disabled" aria-disabled="true">Disabled</a>
-                    </li>
-                </ul>
-                <form class="d-flex" role="search">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success" type="submit">Search</button>
+    <div class="CustomDesignNav">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <a class="navbar-brand h5 customLogoDesign" href="#">CLICK<span style="color: #FB5B20;">FIT</span></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse d-flex me-md-5" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 textWhite">
+                        <li class="nav-item me-md-4">
+                            <a class="nav-link" aria-current="page" href="#">Home</a>
+                        </li>
+
+                        <li class="nav-item me-md-4">
+                            <a class="nav-link" href="#">About Us</a>
+                        </li>
+                        <li class="nav-item me-md-4">
+                            <a class="nav-link" href="#">Fitness Tips</a>
+                        </li>
+                        <li class="nav-item me-md-4">
+                            <a class="nav-link" href="#">Image Upload</a>
+                        </li>
+                        <li class="nav-item me-md-4">
+                            <a class="nav-link" href="#">Working Hours</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <!-- Navbar section end -->
+
+    <!-- Banner section Start -->
+
+    <div id="carouselExampleControls" class="carousel slide SlideCustomDesign" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="https://mir-s3-cdn-cf.behance.net/project_modules/fs/bcde8e135277417.61e56ac9f2914.jpg"
+                    height="100%" class="d-block" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="https://i.ytimg.com/vi/8irjJjoH-bA/maxresdefault.jpg" height="100%" class="d-block" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="https://marketplace.canva.com/EAFI70PJnD8/1/0/1600w/canva-black-modern-gym-fitness-youtube-banner-LHGABN9pfW8.jpg"
+                    height="100%" class="d-block w-100" alt="...">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <!-- Banner section end -->
+
+
+    <!-- about us section start -->
+
+    <section>
+        <div class="section-title mt-5">
+            <p>ABOUT US</p>
+            <h4>WELSOME TO CLICK<span style="color: #FB5B20;">FIT</span></h4>
+        </div>
+
+        <div class="row row-cols-2 mt-md-5 mt-2 conatiner mx-auto">
+            <div class="col-md-4 col-12">
+                <img src="https://pbs.twimg.com/profile_images/1634062009435054081/2BCNlf4i_400x400.jpg" width="100%"
+                    alt="">
+            </div>
+            <div class="col-md-6 col-12 mt-4 mt-md-0 ">
+                <h4>KNOW MORE ABOUT US</h4>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Pariatur fugiat ex officia molestias nobis,
+                    vero odio? Dolorum fugit, nam a soluta neque in optio nihil deserunt impedit. Itaque, asperiores
+                    quidem?</p>
+                <div class="aboutToggle p-2">
+                    <div class="d-flex gap-4 text-light">
+                        <button class="toggleButtonColor">ABOUT US</button>
+                        <button class="">WHY CHOOSE US</button>
+                    </div>
+                    <p class="text-light" id="aboutUs">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                        Corrupti ipsam omnis sunt. Exercitationem id quod maxime sit, ducimus mollitia excepturi
+                        laudantium repudiandae, distinctio incidunt quos optio magnam dolore soluta modi!</p>
+
+                    <p class="text-light collapse" id="whyChoos">Lorem ipsum dolor sit amet consectetur, adipisicing
+                        elit. Corrupti ipsam omnis sunt. Exercitationem id quod maxime sit, ducimus mollitia excepturi
+                        laudantium repudiandae, distinctio incidunt quos optio magnam dolore soluta modi!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- about us section end -->
+
+    <!-- fitness tips section start -->
+
+    <section>
+        <div class="section-title mt-5">
+            <p>TIPS</p>
+            <h4>FITNESS TIPS</h4>
+        </div>
+        <div class="row row-cols-md-3 row-cols-lg-4 gap-2 row-cols-2">
+            <div class="card cols p-2 m-2 m-md-0 mx-auto" style="width: 17rem;">
+                <img src="https://cdn.muscleandstrength.com/sites/default/files/field/image/article/7-habits-of-highly-successful-gym-goers.jpg"
+                    class="card-img-top" height="200rem" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Prep For Success</h5>
+                    <p class="card-text">The fast track to a better diet is found by using your weekends wisely. Use the
+                        extra time you have on Saturday and Sunday to meal prep,</p>
+                </div>
+            </div>
+
+            <div class="card cols p-2 m-2 m-md-0" style="width: 17rem;">
+                <img src="https://thependleburys.com.au/wp-content/uploads/2020/08/scottpendlebury-blog-mixing-up-your-exercise.png"
+                    class="card-img-top" height="200rem" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Mix Up Your Exercise</h5>
+                    <p class="card-text">Variety is – cliché alert! – the spice of life, and many sports and activities
+                        support each other in ways you won’t realise until you try it.</p>
+                </div>
+            </div>
+
+            <div class="card cols p-2 m-2 m-md-0" style="width: 17rem;">
+                <img src="https://thenational-the-national-prod.cdn.arcpublishing.com/resizer/efDIB8rb6yGMVeUW9QbOMhfl1w0=/800x0/filters:format(jpg):quality(70)/cloudfront-eu-central-1.images.arcpublishing.com/thenational/VCGSRUULMRDARNTOATI4HVFM5M.JPG"
+                    class="card-img-top" height="200rem" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Adjust Targets On Trackers</h5>
+                    <p class="card-text">If you invest in a fitness tracker, don’t just sit back and assume that
+                        following the preset targets will lead you to glory. Adjust the steps,</p>
+                </div>
+            </div>
+
+            <div class="card cols p-2 m-2 m-md-0" style="width: 17rem;">
+                <img src="https://www.heart.org/-/media/Images/News/2019/February-2019/0222ExerciseIntensity_SC2.jpg"
+                    class="card-img-top" height="200rem" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Add In Short Bursts Of Activity</h5>
+                    <p class="card-text">It’s the oldest quick fitness fix in the book: take the stairs not the
+                        escalator, or get off the bus a stop early and walk.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Fitness tip section end -->
+
+    <!-- upload photo section start -->
+    <section>
+        <div class="section-title mt-5">
+            <p>UPLOAD IMAGE</p>
+            <h4>SHARE YOUR FITNESS MOMENT</h4>
+            <div class="uploadImage">
+                <form id="imageUploadForm" enctype="multipart/form-data">
+                    <div class="form-group">
+                        <input type="file" class="form-control-file" id="imageInput" accept="image/*" multiple>
+                    </div>
+
+                    <button type="button" class="uploadButton" onclick="submitImage()">Submit Images</button>
                 </form>
             </div>
         </div>
-    </nav>
-    <!-- Navbar section end -->
-    <h1>Hello Bangladesh I test my server</h1>
+    </section>
+    <!-- upload photo section end -->
+
+
+    <!-- Json File fetch Data section start -->
+    <section>
+        <div class="section-title mt-5">
+            <p>HISTORY</p>
+            <h4>TODAY IN HISTORY</h4>
+        </div>
+    </section>
+    <!-- Json file fetch Data section ent -->
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
         integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
