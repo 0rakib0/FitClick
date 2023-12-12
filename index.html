@@ -4,10 +4,22 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap demo</title>
+    <title>ClickFit</title>
+    <!-- Bootstrap CSS -->
+    <script src="https://kit.fontawesome.com/b0da198e17.js" crossorigin="anonymous"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link rel="stylesheet" href="Assets/style.css">
+
+    <!-- My Custom CSS -->
+    <link rel="stylesheet" href="Assets/css/style.css">
+
+    <!-- OWL carousel CSS -->
+    <link rel="stylesheet" href="Assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="Assets/css/owl.theme.default.min.css">
+
+    <!-- AOS animation CSS -->
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 
 <body>
@@ -79,18 +91,18 @@
 
     <!-- about us section start -->
 
-    <section>
-        <div class="section-title mt-5">
+    <section data-aos="fade-up">
+        <div class="section-title mt-5" data-aos="fade-up">
             <p>ABOUT US</p>
             <h4>WELSOME TO CLICK<span style="color: #FB5B20;">FIT</span></h4>
         </div>
 
         <div class="row row-cols-2 mt-md-5 mt-2 conatiner mx-auto">
-            <div class="col-md-4 col-12">
+            <div class="col-md-4 col-12" data-aos="fade-right">
                 <img src="https://pbs.twimg.com/profile_images/1634062009435054081/2BCNlf4i_400x400.jpg" width="100%"
                     alt="">
             </div>
-            <div class="col-md-6 col-12 mt-4 mt-md-0 ">
+            <div class="col-md-6 col-12 mt-4 mt-md-0 " data-aos="fade-left">
                 <h4>KNOW MORE ABOUT US</h4>
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Pariatur fugiat ex officia molestias nobis,
                     vero odio? Dolorum fugit, nam a soluta neque in optio nihil deserunt impedit. Itaque, asperiores
@@ -115,13 +127,13 @@
 
     <!-- fitness tips section start -->
 
-    <section>
+    <section data-aos="fade-up">
         <div class="section-title mt-5">
             <p>TIPS</p>
             <h4>FITNESS TIPS</h4>
         </div>
         <div class="row row-cols-md-3 row-cols-lg-4 gap-2 row-cols-2">
-            <div class="card cols p-2 m-2 m-md-0 mx-auto" style="width: 17rem;">
+            <div class="card cols m-2 m-md-0 mx-auto fitnessImage" style="width: 17rem;" data-aos="fade-up-right">
                 <img src="https://cdn.muscleandstrength.com/sites/default/files/field/image/article/7-habits-of-highly-successful-gym-goers.jpg"
                     class="card-img-top" height="200rem" alt="...">
                 <div class="card-body">
@@ -131,7 +143,7 @@
                 </div>
             </div>
 
-            <div class="card cols p-2 m-2 m-md-0" style="width: 17rem;">
+            <div class="card cols p-2 m-2 m-md-0 mx-auto" style="width: 17rem;" data-aos="fade-up-right">
                 <img src="https://thependleburys.com.au/wp-content/uploads/2020/08/scottpendlebury-blog-mixing-up-your-exercise.png"
                     class="card-img-top" height="200rem" alt="...">
                 <div class="card-body">
@@ -141,7 +153,7 @@
                 </div>
             </div>
 
-            <div class="card cols p-2 m-2 m-md-0" style="width: 17rem;">
+            <div class="card cols p-2 m-2 m-md-0 mx-auto" style="width: 17rem;" data-aos="fade-up-left">
                 <img src="https://thenational-the-national-prod.cdn.arcpublishing.com/resizer/efDIB8rb6yGMVeUW9QbOMhfl1w0=/800x0/filters:format(jpg):quality(70)/cloudfront-eu-central-1.images.arcpublishing.com/thenational/VCGSRUULMRDARNTOATI4HVFM5M.JPG"
                     class="card-img-top" height="200rem" alt="...">
                 <div class="card-body">
@@ -151,7 +163,7 @@
                 </div>
             </div>
 
-            <div class="card cols p-2 m-2 m-md-0" style="width: 17rem;">
+            <div class="card cols p-2 m-2 m-md-0 mx-auto" style="width: 17rem;" data-aos="fade-up-left">
                 <img src="https://www.heart.org/-/media/Images/News/2019/February-2019/0222ExerciseIntensity_SC2.jpg"
                     class="card-img-top" height="200rem" alt="...">
                 <div class="card-body">
@@ -165,11 +177,11 @@
     <!-- Fitness tip section end -->
 
     <!-- upload photo section start -->
-    <section>
+    <section data-aos="fade-up">
         <div class="section-title mt-5">
             <p>UPLOAD IMAGE</p>
             <h4>SHARE YOUR FITNESS MOMENT</h4>
-            <div class="uploadImage">
+            <div class="uploadImage" data-aos="zoom-in-up">
                 <form id="imageUploadForm" enctype="multipart/form-data">
                     <div class="form-group">
                         <input type="file" class="form-control-file" id="imageInput" accept="image/*" multiple>
@@ -184,22 +196,297 @@
 
 
     <!-- Json File fetch Data section start -->
-    <section>
+    <section data-aos="fade-up">
         <div class="section-title mt-5">
             <p>HISTORY</p>
             <h4>TODAY IN HISTORY</h4>
         </div>
+        <div class="card text-center">
+            <div class="card-body">
+                <div class="alert" id="historyALert" role="alert">
+                    
+                </div>
+                <h5 class="card-title">January 30th</h5>
+                <p class="card-text" id="historyText" data-aos="fade-up-right"></p>
+                <p class="card-text" data-aos="fade-up-left"><strong>Type:</strong> <span id="historyType"></span></p>
+                <p class="card-text" data-aos="fade-up-right"><strong>Year:</strong> <span id="historyYear"></span></p>
+                <p class="card-text" data-aos="fade-up-left><strong>Number:</strong> <span id="historyMonth"></span></p>
+            </div>
+        </div>
     </section>
     <!-- Json file fetch Data section ent -->
 
+
+    <!-- testimonial sections start -->
+
+    <section data-aos="fade-up">
+        <div class="section-title mt-5">
+            <p>TESTIMONIAL</p>
+            <h4>WHAT OUR CLIENT SAY</h4>
+        </div>
+        <div class="owl-carousel owl-theme">
+            <div class="item comment">
+                <p style="font-family: Arial, Helvetica, sans-serif;"><i class="fa-solid fa-quote-left"
+                        style="color: #FB5B20;"></i> Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores
+                    ipsam saepe pariatur molestiae? Quibusdam eum ea asperiores recusandae qui, neque placeat corporis,
+                    atque aliquid delectus molestiae minus soluta nihil! <i class="fa-solid fa-quote-right"
+                        style="color: #FB5B20;"></i></p>
+                <h5>John Dev</h5>
+                <small>CEO of Totoki</small>
+            </div>
+            <div class="item comment">
+                <p style="font-family: Arial, Helvetica, sans-serif;"><i class="fa-solid fa-quote-left"
+                        style="color: #FB5B20;"></i> Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores
+                    ipsam saepe pariatur molestiae? Quibusdam eum ea asperiores recusandae qui, neque placeat corporis,
+                    atque aliquid delectus molestiae minus soluta nihil! <i class="fa-solid fa-quote-right"
+                        style="color: #FB5B20;"></i></p>
+                <h5>AL-Amin</h5>
+                <small>Business name</small>
+            </div>
+            <div class="item comment">
+                <p style="font-family: Arial, Helvetica, sans-serif;"><i class="fa-solid fa-quote-left"
+                        style="color: #FB5B20;"></i> Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores
+                    ipsam saepe pariatur molestiae? Quibusdam eum ea asperiores recusandae qui, neque placeat corporis,
+                    atque aliquid delectus molestiae minus soluta nihil! <i class="fa-solid fa-quote-right"
+                        style="color: #FB5B20;"></i></p>
+                <h5>Nivitha Thomas</h5>
+                <small>Artist</small>
+            </div>
+            <div class="item comment">
+                <p style="font-family: Arial, Helvetica, sans-serif;"><i class="fa-solid fa-quote-left"
+                        style="color: #FB5B20;"></i> Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores
+                    ipsam saepe pariatur molestiae? Quibusdam eum ea asperiores recusandae qui, neque placeat corporis,
+                    atque aliquid delectus molestiae minus soluta nihil! <i class="fa-solid fa-quote-right"
+                        style="color: #FB5B20;"></i></p>
+                <h5>Oliva Holde</h5>
+                <small>CEO of Furnitouch</small>
+            </div>
+            <div class="item comment">
+                <p style="font-family: Arial, Helvetica, sans-serif;"><i class="fa-solid fa-quote-left"
+                        style="color: #FB5B20;"></i> Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores
+                    ipsam saepe pariatur molestiae? Quibusdam eum ea asperiores recusandae qui, neque placeat corporis,
+                    atque aliquid delectus molestiae minus soluta nihil! <i class="fa-solid fa-quote-right"
+                        style="color: #FB5B20;"></i></p>
+                <h5>Foysal Mahmud</h5>
+                <small>Affiliat Expert</small>
+            </div>
+            <div class="item comment">
+                <p style="font-family: Arial, Helvetica, sans-serif;"><i class="fa-solid fa-quote-left"
+                        style="color: #FB5B20;"></i> Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores
+                    ipsam saepe pariatur molestiae? Quibusdam eum ea asperiores recusandae qui, neque placeat corporis,
+                    atque aliquid delectus molestiae minus soluta nihil! <i class="fa-solid fa-quote-right"
+                        style="color: #FB5B20;"></i></p>
+                <h5>Shaid</h5>
+                <small>Motion Artist</small>
+            </div>
+            <div class="item comment">
+                <p style="font-family: Arial, Helvetica, sans-serif;"><i class="fa-solid fa-quote-left"
+                        style="color: #FB5B20;"></i> Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores
+                    ipsam saepe pariatur molestiae? Quibusdam eum ea asperiores recusandae qui, neque placeat corporis,
+                    atque aliquid delectus molestiae minus soluta nihil! <i class="fa-solid fa-quote-right"
+                        style="color: #FB5B20;"></i></p>
+                <h5>Oveek Hasan</h5>
+                <small>Content Creator</small>
+            </div>
+            <div class="item comment">
+                <p style="font-family: Arial, Helvetica, sans-serif;"><i class="fa-solid fa-quote-left"
+                        style="color: #FB5B20;"></i> Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores
+                    ipsam saepe pariatur molestiae? Quibusdam eum ea asperiores recusandae qui, neque placeat corporis,
+                    atque aliquid delectus molestiae minus soluta nihil! <i class="fa-solid fa-quote-right"
+                        style="color: #FB5B20;"></i></p>
+                <h5>Bill Gets</h5>
+                <small>CEO of microsoft</small>
+            </div>
+            <div class="item comment">
+                <p style="font-family: Arial, Helvetica, sans-serif;"><i class="fa-solid fa-quote-left"
+                        style="color: #FB5B20;"></i> Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores
+                    ipsam saepe pariatur molestiae? Quibusdam eum ea asperiores recusandae qui, neque placeat corporis,
+                    atque aliquid delectus molestiae minus soluta nihil! <i class="fa-solid fa-quote-right"
+                        style="color: #FB5B20;"></i></p>
+                <h5>Mark Zuckerberg</h5>
+                <small>CEO of facebook</small>
+            </div>
+            <div class="item comment">
+                <p style="font-family: Arial, Helvetica, sans-serif;"><i class="fa-solid fa-quote-left"
+                        style="color: #FB5B20;"></i> Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores
+                    ipsam saepe pariatur molestiae? Quibusdam eum ea asperiores recusandae qui, neque placeat corporis,
+                    atque aliquid delectus molestiae minus soluta nihil! <i class="fa-solid fa-quote-right"
+                        style="color: #FB5B20;"></i></p>
+                <h5>Romana Hasan</h5>
+                <small>Artist</small>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- testimonial sections end -->
+
+
+    <!-- Fitness shedule section start -->
+
+    <section data-aos="fade-up">
+        <div class="section-title mt-5">
+            <p>SCHEDULES</p>
+            <h4>FITNESS SCHEDULES</h4>
+        </div>
+        <div class="my-5">
+            <table class="table table-bordered tableCOl">
+                <thead>
+                    <tr>
+                        <th scope="col" style="background-color: #FB5B20;color: white;">TIME</th>
+                        <th scope="col" style="background-color: #FB5B20;color: white;">MONDAY</th>
+                        <th scope="col" style="background-color: #FB5B20;color: white;">TUESDAY</th>
+                        <th scope="col" style="background-color: #FB5B20;color: white;">WEDNESDAY</th>
+                        <th scope="col" style="background-color: #FB5B20;color: white;">THURSDAY</th>
+                        <th scope="col" style="background-color: #FB5B20;color: white;">FRIDAY</th>
+                        <th scope="col" style="background-color: #FB5B20;color: white;">SATURDAY</th>
+                        <th scope="col" style="background-color: #FB5B20;color: white;">SUNDAY</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row" style="background-color: #686A6F;color: white;">8am-9am</th>
+                        <td>Body Building</td>
+                        <td>Weight Lifting</td>
+                        <td>Off</td>
+                        <td>Yoga</td>
+                        <td>Aerobics</td>
+                        <td>Cycling</td>
+                        <td>Stretching</td>
+                    </tr>
+                    <tr>
+                        <th scope="row" style="background-color: #686A6F;color: white;">10am-11am</th>
+                        <td>Weight Lifting</td>
+                        <td>Body Building</td>
+                        <td>Cardio</td>
+                        <td>Yoga</td>
+                        <td>Aerobics</td>
+                        <td>Cycling</td>
+                        <td>Stretching</td>
+                    </tr>
+                    <tr>
+                        <th scope="row" style="background-color: #686A6F;color: white;">1pm-2am</th>
+                        <td>Off</td>
+                        <td>Weight Lifting</td>
+                        <td>Cardio</td>
+                        <td>Yoga</td>
+                        <td>Aerobics</td>
+                        <td>Cycling</td>
+                        <td>Stretching</td>
+                    </tr>
+                    <tr>
+                        <th scope="row" style="background-color: #686A6F;color: white;">3pm-5pm</th>
+                        <td>Aerobics</td>
+                        <td>Weight Lifting</td>
+                        <td>Cardio</td>
+                        <td>Yoga</td>
+                        <td>Body Building</td>
+                        <td>Off</td>
+                        <td>Stretching</td>
+                    </tr>
+                    <tr>
+                        <th scope="row" style="background-color: #686A6F;color: white;">7pm-9pm</th>
+                        <td>Body Building</td>
+                        <td>Weight Lifting</td>
+                        <td>Off</td>
+                        <td>Yoga</td>
+                        <td>Aerobics</td>
+                        <td>Cycling</td>
+                        <td>Stretching</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+    <!-- Fitness shedule section end -->
+
+
+
+    <!-- Footer Section start -->
+    <!-- FOOTER -->
+    <footer class="w-100 py-4 flex-shrink-0">
+        <div class="container py-4">
+            <div class="row gy-4 gx-5">
+                <div class="col-lg-4 col-md-6">
+                    <a class="navbar-brand h5 customLogoDesign" href="#">CLICK<span
+                            style="color: #FB5B20;">FIT</span></a>
+                </div>
+                <div class="col-lg-2 col-md-6">
+                    <h5 class="text-white mb-3">Quick links</h5>
+                    <ul class="list-unstyled text-muted">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Get started</a></li>
+                        <li><a href="#">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-6">
+                    <h5 class="text-white mb-3">Quick links</h5>
+                    <ul class="list-unstyled text-muted">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Get started</a></li>
+                        <li><a href="#">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <h5 class="text-white mb-3">Newsletter</h5>
+                    <p class="small text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                        tempor incididunt.</p>
+                    <form action="#">
+                        <div class="input-group mb-3">
+                            <input class="form-control" type="text" placeholder="Recipient's username"
+                                aria-label="Recipient's username" aria-describedby="button-addon2">
+                            <button class="btn btn-primary" id="button-addon2" type="button"><i
+                                    class="fas fa-paper-plane"></i></button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+        <p class="small text-center">&copy; Copyrights. All rights reserved.</p>
+    </footer>
+
+    <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
         integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
         crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
         integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
         crossorigin="anonymous"></script>
+
+    <!-- Jquery JS -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <script src="Assets/index.js"></script>
+    <script src="Assets/js/jquery.min.js"></script>
+    <!-- Custom JS -->
+    <script src="Assets/js/index.js"></script>
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <!-- OWL Carousel -->
+    <script src="Assets/js/owl.carousel.min.js"></script>
+    <script>
+        $('.owl-carousel').owlCarousel({
+            loop: true,
+            margin: 10,
+            nav: true,
+            responsive: {
+                400: {
+                    items: 2
+                },
+                600: {
+                    items: 3
+                },
+                1000: {
+                    items: 4
+                }
+            }
+        })
+    </script>
 </body>
 
 </html>
