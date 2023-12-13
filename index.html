@@ -25,31 +25,30 @@
 <body>
     <!-- Navbar section start -->
     <div class="CustomDesignNav">
-        <nav class="navbar navbar-expand-lg">
+        <nav class="navbar navbar-expand-lg navbar-dark">
             <div class="container-fluid">
                 <a class="navbar-brand h5 customLogoDesign" href="#">CLICK<span style="color: #FB5B20;">FIT</span></a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse d-flex me-md-5" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 textWhite">
-                        <li class="nav-item me-md-4">
+
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto textWhite">
+                        <li class="nav-item">
                             <a class="nav-link" aria-current="page" href="#">Home</a>
                         </li>
-
-                        <li class="nav-item me-md-4">
-                            <a class="nav-link" href="#">About Us</a>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#aboutus">About Us</a>
                         </li>
-                        <li class="nav-item me-md-4">
-                            <a class="nav-link" href="#">Fitness Tips</a>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#fitnestips">Fitness Tips</a>
                         </li>
-                        <li class="nav-item me-md-4">
-                            <a class="nav-link" href="#">Image Upload</a>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#imageupload">Image Upload</a>
                         </li>
-                        <li class="nav-item me-md-4">
-                            <a class="nav-link" href="#">Working Hours</a>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#Schedule">FITNES SCHEDULE</a>
                         </li>
                     </ul>
                 </div>
@@ -91,7 +90,7 @@
 
     <!-- about us section start -->
 
-    <section data-aos="fade-up">
+    <section data-aos="fade-up" id="aboutus">
         <div class="section-title mt-5" data-aos="fade-up">
             <p>ABOUT US</p>
             <h4>WELSOME TO CLICK<span style="color: #FB5B20;">FIT</span></h4>
@@ -107,16 +106,18 @@
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Pariatur fugiat ex officia molestias nobis,
                     vero odio? Dolorum fugit, nam a soluta neque in optio nihil deserunt impedit. Itaque, asperiores
                     quidem?</p>
-                <div class="aboutToggle p-2">
+                <div class="aboutToggle p-2 rounded">
                     <div class="d-flex gap-4 text-light">
-                        <button class="toggleButtonColor">ABOUT US</button>
-                        <button class="">WHY CHOOSE US</button>
+                        <button class="toggleButtonColor" id="aboutUs">ABOUT US</button>
+                        <button class="" id="whyChoosus">WHY CHOOSE US</button>
                     </div>
-                    <p class="text-light" id="aboutUs">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    <p class="text-light" id="aboutUsSec">About usLorem ipsum dolor sit amet consectetur, adipisicing
+                        elit.
                         Corrupti ipsam omnis sunt. Exercitationem id quod maxime sit, ducimus mollitia excepturi
                         laudantium repudiandae, distinctio incidunt quos optio magnam dolore soluta modi!</p>
 
-                    <p class="text-light collapse" id="whyChoos">Lorem ipsum dolor sit amet consectetur, adipisicing
+                    <p class="text-light collapse" id="whyChoos">Why Choose Us Lorem ipsum dolor sit amet consectetur,
+                        adipisicing
                         elit. Corrupti ipsam omnis sunt. Exercitationem id quod maxime sit, ducimus mollitia excepturi
                         laudantium repudiandae, distinctio incidunt quos optio magnam dolore soluta modi!</p>
                 </div>
@@ -127,7 +128,7 @@
 
     <!-- fitness tips section start -->
 
-    <section data-aos="fade-up">
+    <section data-aos="fade-up" id="fitnestips">
         <div class="section-title mt-5">
             <p>TIPS</p>
             <h4>FITNESS TIPS</h4>
@@ -177,10 +178,14 @@
     <!-- Fitness tip section end -->
 
     <!-- upload photo section start -->
-    <section data-aos="fade-up">
+    <section data-aos="fade-up" id="imageupload">
         <div class="section-title mt-5">
+
             <p>UPLOAD IMAGE</p>
             <h4>SHARE YOUR FITNESS MOMENT</h4>
+            <div class="alert " style="font-family: Arial, Helvetica, sans-serif;" id="uploadAlert" role="alert">
+
+            </div>
             <div class="uploadImage" data-aos="zoom-in-up">
                 <form id="imageUploadForm" enctype="multipart/form-data">
                     <div class="form-group">
@@ -204,13 +209,14 @@
         <div class="card text-center">
             <div class="card-body">
                 <div class="alert" id="historyALert" role="alert">
-                    
+
                 </div>
                 <h5 class="card-title">January 30th</h5>
                 <p class="card-text" id="historyText" data-aos="fade-up-right"></p>
                 <p class="card-text" data-aos="fade-up-left"><strong>Type:</strong> <span id="historyType"></span></p>
                 <p class="card-text" data-aos="fade-up-right"><strong>Year:</strong> <span id="historyYear"></span></p>
-                <p class="card-text" data-aos="fade-up-left><strong>Number:</strong> <span id="historyMonth"></span></p>
+                <p class="card-text" data-aos="fade-up-left><strong>Number:</strong> <span id=" historyMonth"></span>
+                </p>
             </div>
         </div>
     </section>
@@ -324,78 +330,80 @@
 
     <!-- Fitness shedule section start -->
 
-    <section data-aos="fade-up">
-        <div class="section-title mt-5">
-            <p>SCHEDULES</p>
-            <h4>FITNESS SCHEDULES</h4>
-        </div>
-        <div class="my-5">
-            <table class="table table-bordered tableCOl">
-                <thead>
-                    <tr>
-                        <th scope="col" style="background-color: #FB5B20;color: white;">TIME</th>
-                        <th scope="col" style="background-color: #FB5B20;color: white;">MONDAY</th>
-                        <th scope="col" style="background-color: #FB5B20;color: white;">TUESDAY</th>
-                        <th scope="col" style="background-color: #FB5B20;color: white;">WEDNESDAY</th>
-                        <th scope="col" style="background-color: #FB5B20;color: white;">THURSDAY</th>
-                        <th scope="col" style="background-color: #FB5B20;color: white;">FRIDAY</th>
-                        <th scope="col" style="background-color: #FB5B20;color: white;">SATURDAY</th>
-                        <th scope="col" style="background-color: #FB5B20;color: white;">SUNDAY</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <th scope="row" style="background-color: #686A6F;color: white;">8am-9am</th>
-                        <td>Body Building</td>
-                        <td>Weight Lifting</td>
-                        <td>Off</td>
-                        <td>Yoga</td>
-                        <td>Aerobics</td>
-                        <td>Cycling</td>
-                        <td>Stretching</td>
-                    </tr>
-                    <tr>
-                        <th scope="row" style="background-color: #686A6F;color: white;">10am-11am</th>
-                        <td>Weight Lifting</td>
-                        <td>Body Building</td>
-                        <td>Cardio</td>
-                        <td>Yoga</td>
-                        <td>Aerobics</td>
-                        <td>Cycling</td>
-                        <td>Stretching</td>
-                    </tr>
-                    <tr>
-                        <th scope="row" style="background-color: #686A6F;color: white;">1pm-2am</th>
-                        <td>Off</td>
-                        <td>Weight Lifting</td>
-                        <td>Cardio</td>
-                        <td>Yoga</td>
-                        <td>Aerobics</td>
-                        <td>Cycling</td>
-                        <td>Stretching</td>
-                    </tr>
-                    <tr>
-                        <th scope="row" style="background-color: #686A6F;color: white;">3pm-5pm</th>
-                        <td>Aerobics</td>
-                        <td>Weight Lifting</td>
-                        <td>Cardio</td>
-                        <td>Yoga</td>
-                        <td>Body Building</td>
-                        <td>Off</td>
-                        <td>Stretching</td>
-                    </tr>
-                    <tr>
-                        <th scope="row" style="background-color: #686A6F;color: white;">7pm-9pm</th>
-                        <td>Body Building</td>
-                        <td>Weight Lifting</td>
-                        <td>Off</td>
-                        <td>Yoga</td>
-                        <td>Aerobics</td>
-                        <td>Cycling</td>
-                        <td>Stretching</td>
-                    </tr>
-                </tbody>
-            </table>
+    <section data-aos="fade-up" id="Schedule">
+        <div class="container mt-5">
+            <div class="section-title">
+                <p>SCHEDULES</p>
+                <h4>FITNESS SCHEDULES</h4>
+            </div>
+            <div class="my-5 table-responsive">
+                <table class="table table-bordered">
+                    <thead>
+                        <tr>
+                            <th scope="col" style="background-color: #FB5B20;color: white;">TIME</th>
+                            <th scope="col" style="background-color: #FB5B20;color: white;">MONDAY</th>
+                            <th scope="col" style="background-color: #FB5B20;color: white;">TUESDAY</th>
+                            <th scope="col" style="background-color: #FB5B20;color: white;">WEDNESDAY</th>
+                            <th scope="col" style="background-color: #FB5B20;color: white;">THURSDAY</th>
+                            <th scope="col" style="background-color: #FB5B20;color: white;">FRIDAY</th>
+                            <th scope="col" style="background-color: #FB5B20;color: white;">SATURDAY</th>
+                            <th scope="col" style="background-color: #FB5B20;color: white;">SUNDAY</th>
+                        </tr>
+                    </thead>
+                    <tbody style="font-family: Arial, Helvetica, sans-serif;">
+                        <tr>
+                            <th scope="row" style="background-color: #686A6F;color: white;">8am-9am</th>
+                            <td>Body Building</td>
+                            <td>Weight Lifting</td>
+                            <td>Off</td>
+                            <td>Yoga</td>
+                            <td>Aerobics</td>
+                            <td>Cycling</td>
+                            <td>Stretching</td>
+                        </tr>
+                        <tr>
+                            <th scope="row" style="background-color: #686A6F;color: white;">10am-11am</th>
+                            <td>Weight Lifting</td>
+                            <td>Body Building</td>
+                            <td>Cardio</td>
+                            <td>Yoga</td>
+                            <td>Aerobics</td>
+                            <td>Cycling</td>
+                            <td>Stretching</td>
+                        </tr>
+                        <tr>
+                            <th scope="row" style="background-color: #686A6F;color: white;">1pm-2am</th>
+                            <td>Off</td>
+                            <td>Weight Lifting</td>
+                            <td>Cardio</td>
+                            <td>Yoga</td>
+                            <td>Aerobics</td>
+                            <td>Cycling</td>
+                            <td>Stretching</td>
+                        </tr>
+                        <tr>
+                            <th scope="row" style="background-color: #686A6F;color: white;">3pm-5pm</th>
+                            <td>Aerobics</td>
+                            <td>Weight Lifting</td>
+                            <td>Cardio</td>
+                            <td>Yoga</td>
+                            <td>Body Building</td>
+                            <td>Off</td>
+                            <td>Stretching</td>
+                        </tr>
+                        <tr>
+                            <th scope="row" style="background-color: #686A6F;color: white;">7pm-9pm</th>
+                            <td>Body Building</td>
+                            <td>Weight Lifting</td>
+                            <td>Off</td>
+                            <td>Yoga</td>
+                            <td>Aerobics</td>
+                            <td>Cycling</td>
+                            <td>Stretching</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
         </div>
     </section>
     <!-- Fitness shedule section end -->
@@ -404,7 +412,7 @@
 
     <!-- Footer Section start -->
     <!-- FOOTER -->
-    <footer class="w-100 py-4 flex-shrink-0">
+    <footer data-aos="fade-up" class="w-100 py-4 flex-shrink-0">
         <div class="container py-4">
             <div class="row gy-4 gx-5">
                 <div class="col-lg-4 col-md-6">
@@ -412,7 +420,7 @@
                             style="color: #FB5B20;">FIT</span></a>
                 </div>
                 <div class="col-lg-2 col-md-6">
-                    <h5 class="text-white mb-3">Quick links</h5>
+                    <h5 class="mb-3" style="color: #FB5B20;">Quick links</h5>
                     <ul class="list-unstyled text-muted">
                         <li><a href="#">Home</a></li>
                         <li><a href="#">About</a></li>
@@ -421,7 +429,7 @@
                     </ul>
                 </div>
                 <div class="col-lg-2 col-md-6">
-                    <h5 class="text-white mb-3">Quick links</h5>
+                    <h5 class="mb-3" style="color: #FB5B20;">Quick links</h5>
                     <ul class="list-unstyled text-muted">
                         <li><a href="#">Home</a></li>
                         <li><a href="#">About</a></li>
@@ -430,7 +438,7 @@
                     </ul>
                 </div>
                 <div class="col-lg-4 col-md-6">
-                    <h5 class="text-white mb-3">Newsletter</h5>
+                    <h5 class="mb-3" style="color: #FB5B20;">Newsletter</h5>
                     <p class="small text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
                         tempor incididunt.</p>
                     <form action="#">
@@ -448,13 +456,12 @@
         <p class="small text-center">&copy; Copyrights. All rights reserved.</p>
     </footer>
 
-    <!-- Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
-        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
-        crossorigin="anonymous"></script>
+
+    <!-- Bootstrap JS and Popper.js -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"></script>
+
 
     <!-- Jquery JS -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
@@ -465,7 +472,7 @@
     <!-- AOS JS -->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
-      AOS.init();
+        AOS.init();
     </script>
     <!-- OWL Carousel -->
     <script src="Assets/js/owl.carousel.min.js"></script>
